@@ -689,6 +689,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
+    libmmosal_vendor \
     vendor.qti.diaghal-V1-ndk \
     btaudio_offload_if \
     camera.device@1.0-impl \
