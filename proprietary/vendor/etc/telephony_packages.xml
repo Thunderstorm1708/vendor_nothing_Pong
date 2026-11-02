@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <!--
-    Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
-    All rights reserved.
+    Copyright (c) 2021, 2024 Qualcomm Technologies, Inc.
+    All Rights Reserved.
     Confidential and Proprietary - Qualcomm Technologies, Inc.
 -->
 <!--
@@ -16,7 +16,6 @@
              For duplicate entry of package name, add version number at the end.
              e.g., com.qti.phone , com.qti.phone.2
 
-
     2. path: The app's location on the file system.
              a. For apps that have their own directory, e.g., /product/priv-app/Dialer/Dialer.apk,
                 this should point to the directory.
@@ -30,7 +29,6 @@
     <packageinfo name="com.android.cellbroadcastreceiver.module" path="/apex/com.android.cellbroadcast/priv-app/CellBroadcastApp" />
     <packageinfo name="com.android.cellbroadcastservice" path="/apex/com.android.cellbroadcast/priv-app/CellBroadcastServiceModule" />
     <packageinfo name="com.android.dialer" path="/product/priv-app/Dialer" />
-    <packageinfo name="com.android.imsserviceentitlement" path="/product/priv-app/ImsServiceEntitlement" />
     <packageinfo name="com.android.mms" path="/system_ext/priv-app/Mms" />
     <packageinfo name="com.android.mms.service" path="/system/priv-app/MmsService" />
     <packageinfo name="com.android.MultiplePdpTest" path="/system_ext/app/MultiplePdpTest" />
@@ -40,10 +38,13 @@
     <packageinfo name="com.android.providers.telephony" path="/system/priv-app/TelephonyProvider" />
     <packageinfo name="com.android.stk" path="/system/app/Stk" />
     <packageinfo name="com.qti.confuridialer" path="/product/app/ConfURIDialer" />
-    <packageinfo name="com.qti.phone" path="/system_ext/priv-app/QtiTelephony" />
-    <packageinfo name="com.qti.telephonysettings" path="/system_ext/app/QtiTelephonySettings" />
+    <packageinfo name="com.qti.phone" path="/system_ext/app/QtiTelephony" />
+    <packageinfo name="com.qti.phone.2" path="/system_ext/priv-app/QtiTelephony" />
+    <packageinfo name="com.qti.telephonysettings" path="/product/app/QtiTelephonySettings" />
+    <packageinfo name="com.qti.telephonysettings.2" path="/system_ext/app/QtiTelephonySettings" />
     <packageinfo name="com.qti.qualcomm.carriertest" path="/system_ext/app/CarrierTest" />
-    <packageinfo name="com.qti.qualcomm.datastatusnotification" path="/product/app/datastatusnotification" />
+    <packageinfo name="com.qti.qualcomm.datastatusnotification" path="/system_ext/app/datastatusnotification" />
+    <packageinfo name="com.qti.qualcomm.datastatusnotification.2" path="/product/app/datastatusnotification" />
     <packageinfo name="com.qti.qualcomm.deviceinfo" path="/system_ext/app/DeviceInfo" />
     <packageinfo name="com.qti.xdivert" path="/product/app/xdivert" />
     <packageinfo name="com.qualcomm.atfwd" path="/system_ext/app/atfwd" />
@@ -54,6 +55,7 @@
     <packageinfo name="com.qualcomm.qti.callfeaturessetting" path="/product/app/CallFeaturesSetting" />
     <packageinfo name="com.qualcomm.qti.confdialer" path="/product/app/ConferenceDialer" />
     <packageinfo name="com.qualcomm.qti.devicestatisticsservice" path="/product/app/DeviceStatisticsService" />
+    <packageinfo name="com.qualcomm.qti.devicestatisticsservice.2" path="/system_ext/app/DeviceStatisticsService" />
     <packageinfo name="com.qualcomm.qti.euiccresource" path="/product/app/EuiccResource" />
     <packageinfo name="com.qualcomm.qti.ims" path="/system_ext/app/imssettings" />
     <packageinfo name="com.qualcomm.qti.lpa" path="/product/app/uimlpaservice" />

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
     <!--
-        Copyright (C) 2012 - 2021 Qualcomm Technologies, Inc.
+        Copyright (C) 2012 - 2019, 2021 Qualcomm Technologies, Inc.
         All Rights Reserved.
         Confidential and Proprietary - Qualcomm Technologies, Inc.
-        Copyright 2024 Sony Corporation
     -->
 <WFDConfig>
     <Capability>
@@ -12,7 +11,7 @@
         -->
         <AudioLPCM>
             <Name>LPCM</Name>
-            <Valid>0</Valid>
+            <Valid>1</Valid>
             <Channels>2</Channels>
             <SamplingFreq>48000</SamplingFreq>
             <Latency>33</Latency>
@@ -21,7 +20,7 @@
         <AudioAAC>
             <Name>AAC</Name>
             <Valid>1</Valid>
-            <Channels>2</Channels>
+            <Channels>6</Channels>
             <SamplingFreq>48000</SamplingFreq>
             <Latency>0</Latency>
         </AudioAAC>
@@ -40,7 +39,7 @@
         <VideoFormats>
 
         <VideoCodecHeader>
-        <TotalProfiles>2</TotalProfiles>
+        <TotalProfiles>3</TotalProfiles>
         <PreferredDisplaySupport>0</PreferredDisplaySupport>
         </VideoCodecHeader>
              <!-- AVC Profile 0 - Constrained Baseline,
@@ -52,27 +51,33 @@
                   HEVC Profile 0 - Main
             -->
 
-            <!-- Level  0 - 3.1,
-                        1 - 3.2,
-                        2 - 4.0,
-                        3 - 4.1,
-                        4 - 4.2,
-                        5 - 5,
-                        6 - 5.1,
-                        7 - 5.2
+            <!-- AVC Level  0 - 3.1,
+                            1 - 3.2,
+                            2 - 4.0,
+                            3 - 4.1,
+                            4 - 4.2,
+                            5 - 5,
+                            6 - 5.1,
+                            7 - 5.2
+
+                 HEVC Level 0 - 3.1,
+                            1 - 4,
+                            2 - 4.1,
+                            3 - 5,
+                            4 - 5.1
             -->
 
             <VideoCodec1>
                 <CodecName>H.264</CodecName>
                 <Profile>0</Profile>
-                <Level>3</Level>
-                <HorizontalResolution>1920</HorizontalResolution>
-                <VerticalResolution>1080</VerticalResolution>
+                <Level>6</Level>
+                <HorizontalResolution>4096</HorizontalResolution>
+                <VerticalResolution>2160</VerticalResolution>
                 <Latency>0</Latency>
                 <MinimumSliceSize>0</MinimumSliceSize>
                 <SliceEncodingParams>0</SliceEncodingParams>
                 <FrameRateControlSupp>1</FrameRateControlSupp>
-                <VideoFps>30</VideoFps>
+                <VideoFps>60</VideoFps>
                 <TranscodingMode>1</TranscodingMode>
                 <NonTranscodingMode>1</NonTranscodingMode>
             </VideoCodec1>
@@ -80,17 +85,32 @@
             <VideoCodec2>
                 <CodecName>H.264</CodecName>
                 <Profile>1</Profile>
-                <Level>3</Level>
-                <HorizontalResolution>1920</HorizontalResolution>
-                <VerticalResolution>1080</VerticalResolution>
+                <Level>6</Level>
+                <HorizontalResolution>4096</HorizontalResolution>
+                <VerticalResolution>2160</VerticalResolution>
                 <Latency>0</Latency>
                 <MinimumSliceSize>0</MinimumSliceSize>
                 <SliceEncodingParams>0</SliceEncodingParams>
                 <FrameRateControlSupp>1</FrameRateControlSupp>
-                <VideoFps>30</VideoFps>
+                <VideoFps>60</VideoFps>
                 <TranscodingMode>1</TranscodingMode>
                 <NonTranscodingMode>1</NonTranscodingMode>
             </VideoCodec2>
+
+            <VideoCodec3>
+                <CodecName>H.265</CodecName>
+                <Profile>0</Profile>
+                <Level>4</Level>
+                <HorizontalResolution>4096</HorizontalResolution>
+                <VerticalResolution>2160</VerticalResolution>
+                <Latency>0</Latency>
+                <MinimumSliceSize>0</MinimumSliceSize>
+                <SliceEncodingParams>0</SliceEncodingParams>
+                <FrameRateControlSupp>1</FrameRateControlSupp>
+                <VideoFps>60</VideoFps>
+                <TranscodingMode>1</TranscodingMode>
+                <NonTranscodingMode>1</NonTranscodingMode>
+            </VideoCodec3>
         </VideoFormats>
 
       <!--
@@ -107,7 +127,6 @@
                 Resolution is 720P
             -->
             <MaxOverlay>5</MaxOverlay>
-            <BlendMode>0</BlendMode>
             <HRes>1280</HRes>
             <VRes>720</VRes>
             <Mode>CEA</Mode>
@@ -135,19 +154,18 @@
             0 means Frame skipping interval is infinite and recommended value is 0
         -->
         <FrameSkipping>
-            <Valid>0</Valid>
+            <Valid>1</Valid>
             <FrameInterval>0</FrameInterval>
         </FrameSkipping>
 
-        <!--  enable HDCP by default -->
+        <!--  disable HDCP by default -->
         <ContentProtection>
             <Valid>0</Valid>
             <!--
                 Valid values WFD_HDCP_2_0,
-                WFD_HDCP_2_1, WFD_HDCP_2_2
-                and WFD_HDCP_2_3
+                WFD_HDCP_2_1 and WFD_HDCP_2_2
             -->
-            <Version>WFD_HDCP_2_3</Version>
+            <Version>WFD_HDCP_2_2</Version>
             <CPPort>6789</CPPort>
             <!--
                 turn on/off audio encryption
@@ -160,8 +178,8 @@
         -->
         <RTPDumpEnable>
             <!-- DEPRECATED -->
-            <!-- For enabling RTP encoder dumping
-                 persist.sys.enable_RTPDumps to  1
+            <!-- For enabling RTP encoder dumping set
+                 persist.vendor.debug.rtp.enable_dump to 1
                  /data/media/dump.ts
             -->
         </RTPDumpEnable>
@@ -170,7 +188,7 @@
             UIBC settings
         -->
         <UIBC>
-            <UIBCValid>1</UIBCValid>                <!-- UIBC by default disabled -->
+            <UIBCValid>1</UIBCValid>                <!-- UIBC by default enabled -->
             <M4Enable>1</M4Enable>                  <!-- 0/1 send UIBC enable in M4 or not -->
             <M14Support>0</M14Support>              <!-- 0/1 M14 supported or not -->
             <InputCategory>
@@ -222,7 +240,7 @@
         Enabling Rtcp
     -->
     <RTCP>
-        <RtcpRRNotificationEnabled>0</RtcpRRNotificationEnabled>
+        <RtcpRRNotificationEnabled>1</RtcpRRNotificationEnabled>
     </RTCP>
 
     <!--
@@ -239,7 +257,7 @@
     <!--
         RTSP port on which RTSP server is running
     -->
-    <RTSPPort>7236</RTSPPort>
+    <RTSPPort>5550</RTSPPort>
 
     <!--
         To configure video core in SVS mode
@@ -323,8 +341,8 @@
             </BIT4>
           <!-- 1280x720p30  -->
             <BIT5>
-                <MinBitrate>3000000</MinBitrate>
-                <MaxBitrate>6000000</MaxBitrate>
+                <MinBitrate>2500000</MinBitrate>
+                <MaxBitrate>10000000</MaxBitrate>
             </BIT5>
           <!-- 1280x720p60  -->
             <BIT6>
@@ -333,13 +351,13 @@
             </BIT6>
           <!-- 1920x1080p30  -->
             <BIT7>
-                <MinBitrate>3000000</MinBitrate>
-                <MaxBitrate>6000000</MaxBitrate>
+                <MinBitrate>5000000</MinBitrate>
+                <MaxBitrate>10000000</MaxBitrate>
             </BIT7>
           <!-- 1920x1080p60  -->
             <BIT8>
-                <MinBitrate>10000000</MinBitrate>
-                <MaxBitrate>20000000</MaxBitrate>
+                <MinBitrate>7000000</MinBitrate>
+                <MaxBitrate>13000000</MaxBitrate>
             </BIT8>
           <!-- 1920x1080i60  -->
             <BIT9>
@@ -373,8 +391,8 @@
             </BIT14>
           <!-- 1280x720p24  -->
             <BIT15>
-                <MinBitrate>3000000</MinBitrate>
-                <MaxBitrate>6000000</MaxBitrate>
+                <MinBitrate>2500000</MinBitrate>
+                <MaxBitrate>10000000</MaxBitrate>
             </BIT15>
           <!-- 1920x1080p24  -->
             <BIT16>
@@ -729,9 +747,9 @@
 
 
     <!-- Direct Streaming Feature support -->
-    <StreamingSupport>0</StreamingSupport>
+    <StreamingSupport>1</StreamingSupport>
 
     <!-- Enfore HDCP for Direct Streaming -->
-    <DSRequiresHDCP>0</DSRequiresHDCP>
+    <DSRequiresHDCP>1</DSRequiresHDCP>
 
 </WFDConfig>

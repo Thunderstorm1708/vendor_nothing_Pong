@@ -74,14 +74,16 @@ on property:persist.radio.multisim.config=DSDS && property:ro.baseband=mdm
     stop vendor.qcrild2
     start vendor.qcrild
     start vendor.qcrild2
-
+#ARBOK-409: set persist.vendor.radio.dsds_to_ss to 0
 on property:ro.boot.product.vendor.sku=tuna
-    setprop persist.vendor.radio.dsds_to_ss 1
+    setprop persist.vendor.radio.dsds_to_ss 0
     setprop persist.vendor.radio.dsds_to_ss_timer 120000
 
+#BELLP-282 lihui add for set dsds_to_ss to 0 20250902 begin
 on property:ro.boot.product.vendor.sku=kera
-    setprop persist.vendor.radio.dsds_to_ss 1
+    setprop persist.vendor.radio.dsds_to_ss 0
     setprop persist.vendor.radio.dsds_to_ss_timer 120000
+#BELLP-282 lihui add for set dsds_to_ss to 0 20250902 end
 
 on early-init && property:ro.baseband=apq
     setprop ro.radio.noril yes

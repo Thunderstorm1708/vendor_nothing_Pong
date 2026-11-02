@@ -3,8 +3,7 @@
   All Rights Reserved.
   Confidential and Proprietary - Qualcomm Technologies, Inc.
 */
-/* SONY_BEGIN (JIML-299432 - According to ORM, local ecc shall be set up as normal call) */
-/*
+
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('208','01','15','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('208','01','17','','');
 INSERT INTO qcril_emergency_source_mcc_mnc_table VALUES('208','01','18','','');
@@ -228,5 +227,3 @@ INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('208','13','196','
 INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('208','13','197','','');
 INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('208','13','116000','','');
 INSERT INTO qcril_emergency_source_voice_mcc_mnc_table VALUES('208','13','116117','','');
-*/
-/* SONY_END (JIML-299432 - According to ORM, local ecc shall be set up as normal call) */
