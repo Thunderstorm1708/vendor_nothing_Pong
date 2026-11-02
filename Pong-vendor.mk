@@ -875,14 +875,6 @@ PRODUCT_PACKAGES += \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
     libVkLayer_ADRENO_qprofiler \
-    libgnsspps \
-    libgps.utils \
-    libloc_base_util \
-    libloc_core \
-    libloc_socket \
-    liblocation_api \
-    libmmosal_vendor \
-    libpowercore \
     libq3dtools_adreno \
     libq3dtools_esx \
     ftm_fm_lib \
@@ -892,19 +884,13 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     com.qti.chi.override \
     fingerprint.default \
-    libqspm-mem-utils-vendor \
     libqtigatekeeper \
-    libsdm-color \
-    libsynergy_loc_api \
-    libtinyxml2_1 \
     mbedtls_qti \
-    qti.video.utils.videobufferlayout \
     vendor.qti.hardware.bluetooth_sar@aidl-impl \
     vendor.qti.hardware.bttpi-impl \
     vendor.qti.hardware.capabilityconfigstore-impl \
     vendor.qti.hardware.fm-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
-    vendor.qti.qspmhal-V1-ndk_vendor \
     vibrator.default \
     vulkan.adreno \
     lib-imscommon \
@@ -1039,6 +1025,8 @@ PRODUCT_PACKAGES += \
     libfastcvopt \
     libgdtap \
     libgf_hal \
+    libgnsspps \
+    libgps.utils \
     libgpudataproducer \
     libgsl \
     libhdr10plus \
@@ -1070,11 +1058,15 @@ PRODUCT_PACKAGES += \
     libloadalgo_stub \
     libloc_api_v02_prebuilt \
     libloc_api_wds \
+    libloc_base_util \
+    libloc_core \
     libloc_eng_hub \
     libloc_mq_client \
     libloc_qwes_iface \
     libloc_ril_client \
+    libloc_socket \
     libloc_util \
+    liblocation_api \
     liblocationservice \
     liblocationservice_glue \
     liblocdiagiface \
@@ -1096,6 +1088,7 @@ PRODUCT_PACKAGES += \
     libmmcamera_mfnr \
     libmmcamera_mfnr_t4 \
     libmmcamera_pdpc \
+    libmmosal_vendor \
     libmmrtpdecoder_vendor \
     libmmrtpencoder_vendor \
     libmorpho_MotionSensor \
@@ -1143,6 +1136,7 @@ PRODUCT_PACKAGES += \
     libpdnotifier \
     libperipheral_client \
     libpn560_fw \
+    libpowercore \
     libqcbor \
     libqcc_file_agent \
     libqcc_sdk \
@@ -1187,6 +1181,7 @@ PRODUCT_PACKAGES += \
     libqrtr \
     libqshcamera \
     libqsocket \
+    libqspm-mem-utils-vendor \
     libqtigefar \
     libqtiidentitycredential \
     libqtikeymint \
@@ -1207,6 +1202,7 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation \
     libscveObjectTracker \
     libscveObjectTracker_stub \
+    libsdm-color \
     libsdsprpc \
     libsensor_calibration \
     libsensorslog \
@@ -1235,6 +1231,7 @@ PRODUCT_PACKAGES += \
     libsubsystem_control \
     libsuperresolution_raw.arcsoft \
     libswregistrationalgo \
+    libsynergy_loc_api \
     libsynx \
     libsys_info_cache \
     libsysmon_cdsp_skel \
@@ -1243,6 +1240,7 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libthreadutils \
     libtime_genoff \
+    libtinyxml2_1 \
     libtrustedapploader \
     libtzdrmgenprov \
     libubifocus \
@@ -1296,6 +1294,7 @@ PRODUCT_PACKAGES += \
     qcril_client \
     qcrild_libqcrilnr \
     qcrild_libqcrilnrutils \
+    qti.video.utils.videobufferlayout \
     qtiPeripheralMgr \
     qtiril-utils \
     qtiwakelock \
@@ -1428,6 +1427,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.qesdhal@1.2 \
     vendor.qti.qesdhal@1.3 \
     vendor.qti.qesdsys-V1-ndk_platform \
+    vendor.qti.qspmhal-V1-ndk_vendor \
     vendor.qti.snapdragonServices-V1-ndk \
     vendor.qti.snapdragonServices-V2-ndk_vendor \
     vendor.qti.snapdragonServices.qape-V1-ndk \
