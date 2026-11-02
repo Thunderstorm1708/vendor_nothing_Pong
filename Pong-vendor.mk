@@ -875,6 +875,13 @@ PRODUCT_PACKAGES += \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
     libVkLayer_ADRENO_qprofiler \
+    libgnsspps \
+    libgps.utils \
+    libloc_base_util \
+    libloc_core \
+    libloc_socket \
+    libmmosal_vendor \
+    libpowercore \
     libq3dtools_adreno \
     libq3dtools_esx \
     ftm_fm_lib \
@@ -884,13 +891,19 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     com.qti.chi.override \
     fingerprint.default \
+    libqspm-mem-utils-vendor \
     libqtigatekeeper \
+    libsdm-color \
+    libsynergy_loc_api \
+    libtinyxml2_1 \
     mbedtls_qti \
+    qti.video.utils.videobufferlayout \
     vendor.qti.hardware.bluetooth_sar@aidl-impl \
     vendor.qti.hardware.bttpi-impl \
     vendor.qti.hardware.capabilityconfigstore-impl \
     vendor.qti.hardware.fm-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
+    vendor.qti.qspmhal-V1-ndk_vendor \
     vibrator.default \
     vulkan.adreno \
     lib-imscommon \
