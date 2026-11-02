@@ -27728,8 +27728,7 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "vendor.qti.hardware.vibrator.service_pong",
-    stem: "vendor.qti.hardware.vibrator.service",
+    name: "vendor.qti.hardware.vibrator.service",
     owner: "nothing",
     target: {
         android_arm64: {
