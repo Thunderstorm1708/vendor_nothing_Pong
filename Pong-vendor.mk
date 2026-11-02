@@ -699,6 +699,7 @@ PRODUCT_PACKAGES += \
     libpowercore \
     libprotobuf-c-idd \
     libsdm-color \
+    libtinyxml2_1 \
     qti.video.utils.videobufferlayout \
     vendor.qti.diaghal-V1-ndk \
     btaudio_offload_if \
