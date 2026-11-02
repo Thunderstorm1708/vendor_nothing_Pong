@@ -1200,6 +1200,7 @@ PRODUCT_PACKAGES += \
     libqmiservices \
     libqms \
     libqms_client \
+    libqrtr \
     libqshcamera \
     libqsocket \
     libqspm-mem-utils-vendor \
