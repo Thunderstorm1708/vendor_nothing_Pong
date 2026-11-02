@@ -689,7 +689,17 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
+    libidd \
+    libmdmdetect \
     libmmosal_vendor \
+    libmmparser_lite \
+    libntcamera2ndk_vendor_v1 \
+    libpdmapper \
+    libpdnotifier \
+    libpowercore \
+    libprotobuf-c-idd \
+    libsdm-color \
+    qti.video.utils.videobufferlayout \
     vendor.qti.diaghal-V1-ndk \
     btaudio_offload_if \
     camera.device@1.0-impl \
@@ -914,8 +924,13 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar@aidl-impl \
     vendor.qti.hardware.bttpi-impl \
     vendor.qti.hardware.capabilityconfigstore-impl \
+    vendor.qti.hardware.fm-V1-ndk \
     vendor.qti.hardware.fm-impl \
+    vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.qseecom@1.0-impl \
+    vendor.semc.hardware.spc-V1-ndk \
+    vendor.semc.system.idd.aidl-V1-ndk \
+    vendor.semc.system.idd@1.0 \
     vibrator.default \
     vulkan.adreno \
     lib-imscommon \
