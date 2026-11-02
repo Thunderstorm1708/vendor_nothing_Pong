@@ -1671,7 +1671,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore-service \
     vendor.qti.hardware.factory@1.0-service \
     vendor.qti.hardware.qseecom@1.0-service \
-    vendor.qti.hardware.vibrator.service \
+    vendor.qti.hardware.vibrator.service_pong \
     ims-dataservice-daemon \
     ims_rtp_daemon \
     imsdaemon \
