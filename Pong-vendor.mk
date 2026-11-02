@@ -1507,6 +1507,7 @@ PRODUCT_PACKAGES += \
     libdpmtcm \
     libencoderjpeg_jni \
     libimsmedia_jni \
+    libmmosal \
     libmmrtpdecoder \
     libmmrtpencoder \
     libwfdavenhancements \
