@@ -880,6 +880,7 @@ PRODUCT_PACKAGES += \
     libloc_base_util \
     libloc_core \
     libloc_socket \
+    liblocation_api \
     libmmosal_vendor \
     libpowercore \
     libq3dtools_adreno \
