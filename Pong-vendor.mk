@@ -889,6 +889,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.bluetooth_sar@aidl-impl \
     vendor.qti.hardware.bttpi-impl \
     vendor.qti.hardware.capabilityconfigstore-impl \
+    vendor.qti.hardware.fm-V1-ndk \
     vendor.qti.hardware.fm-impl \
     vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.qseecom@1.0-impl \
