@@ -874,12 +874,6 @@ PRODUCT_PACKAGES += \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
     libVkLayer_ADRENO_qprofiler \
-    libgnsspps \
-    libgps.utils \
-    libloc_base_util \
-    libloc_core \
-    libloc_socket \
-    liblocation_api \
     libq3dtools_adreno \
     libq3dtools_esx \
     ftm_fm_lib \
@@ -890,14 +884,11 @@ PRODUCT_PACKAGES += \
     com.qti.chi.override \
     fingerprint.default \
     libqtigatekeeper \
-    libsynergy_loc_api \
     mbedtls_qti \
     vendor.qti.hardware.bluetooth_sar@aidl-impl \
     vendor.qti.hardware.bttpi-impl \
     vendor.qti.hardware.capabilityconfigstore-impl \
-    vendor.qti.hardware.fm-V1-ndk \
     vendor.qti.hardware.fm-impl \
-    vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.qseecom@1.0-impl \
     vibrator.default \
     vulkan.adreno \
@@ -1033,6 +1024,8 @@ PRODUCT_PACKAGES += \
     libfastcvopt \
     libgdtap \
     libgf_hal \
+    libgnsspps \
+    libgps.utils \
     libgpudataproducer \
     libgsl \
     libhdr10plus \
@@ -1064,11 +1057,15 @@ PRODUCT_PACKAGES += \
     libloadalgo_stub \
     libloc_api_v02_prebuilt \
     libloc_api_wds \
+    libloc_base_util \
+    libloc_core \
     libloc_eng_hub \
     libloc_mq_client \
     libloc_qwes_iface \
     libloc_ril_client \
+    libloc_socket \
     libloc_util \
+    liblocation_api \
     liblocationservice \
     liblocationservice_glue \
     liblocdiagiface \
@@ -1233,6 +1230,7 @@ PRODUCT_PACKAGES += \
     libsubsystem_control \
     libsuperresolution_raw.arcsoft \
     libswregistrationalgo \
+    libsynergy_loc_api \
     libsynx \
     libsys_info_cache \
     libsysmon_cdsp_skel \
@@ -1351,6 +1349,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.embmsslaidl-V2-ndk_vendor \
     vendor.qti.hardware.factory@1.0 \
     vendor.qti.hardware.factory@1.1 \
+    vendor.qti.hardware.fm-V1-ndk \
+    vendor.qti.hardware.fm@1.0 \
     vendor.qti.hardware.minkipcbinder-V1-ndk_vendor \
     vendor.qti.hardware.mwqemadapteraidlservice-V1-ndk_vendor \
     vendor.qti.hardware.power.powermodule@1.0 \
