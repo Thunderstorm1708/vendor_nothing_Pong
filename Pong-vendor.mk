@@ -876,6 +876,7 @@ PRODUCT_PACKAGES += \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
     libVkLayer_ADRENO_qprofiler \
+    libmemutils \
     libq3dtools_adreno \
     libq3dtools_esx \
     ftm_fm_lib \
@@ -885,7 +886,9 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     com.qti.chi.override \
     fingerprint.default \
+    libqrtrclient \
     libqtigatekeeper \
+    libvmmem \
     mbedtls_qti \
     vendor.qti.hardware.bluetooth_sar@aidl-impl \
     vendor.qti.hardware.bttpi-impl \
