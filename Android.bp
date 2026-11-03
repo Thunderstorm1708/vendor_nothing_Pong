@@ -27300,6 +27300,14 @@ sh_binary {
 }
 
 sh_binary {
+    name: "init.qti.kernel",
+    owner: "nothing",
+    src: "proprietary/vendor/bin/init.qti.kernel.sh",
+    filename: "init.qti.kernel.sh",
+    soc_specific: true,
+}
+
+sh_binary {
     name: "init.qti.qcv",
     owner: "nothing",
     src: "proprietary/vendor/bin/init.qti.qcv.sh",
@@ -28701,3 +28709,11 @@ install_symlink {
     installed_location: "lib64/libq3dtools_adreno.so",
     symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
 }
+sh_binary {
+    name: "vendor_modprobe",
+    owner: "nothing",
+    src: "proprietary/vendor/bin/vendor_modprobe.sh",
+    filename: "vendor_modprobe.sh",
+    soc_specific: true,
+}
+

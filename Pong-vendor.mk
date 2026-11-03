@@ -204,6 +204,7 @@ PRODUCT_COPY_FILES += \
     vendor/nothing/Pong/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/nothing/Pong/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/nothing/Pong/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
+    vendor/nothing/Pong/proprietary/vendor/etc/init/hw/init.qti.kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qti.kernel.rc \
     vendor/nothing/Pong/proprietary/vendor/etc/init/ims-dataservice-daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims-dataservice-daemon.rc \
     vendor/nothing/Pong/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
     vendor/nothing/Pong/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
@@ -793,6 +794,7 @@ PRODUCT_PACKAGES += \
     com.qtistatic.stats.af \
     com.qtistatic.stats.awb \
     com.qtistatic.stats.pdlib \
+    init.qti.kernel \
     libdepthmapwrapper \
     libdepthmapwrapper_secure \
     com.nothing.node.aimoon \
@@ -890,6 +892,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore-impl \
     vendor.qti.hardware.fm-impl \
     vendor.qti.hardware.qseecom@1.0-impl \
+    vendor_modprobe \
     vibrator.default \
     vulkan.adreno \
     lib-imscommon \
