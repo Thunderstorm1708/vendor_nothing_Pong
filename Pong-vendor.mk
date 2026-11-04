@@ -795,7 +795,7 @@ PRODUCT_PACKAGES += \
     com.qtistatic.stats.awb \
     com.qtistatic.stats.pdlib \
     init.qti.kernel \
-    libbacklight-calib \
+    libcolor-default \
     libdepthmapwrapper \
     libdepthmapwrapper_secure \
     com.nothing.node.aimoon \
@@ -882,11 +882,9 @@ PRODUCT_PACKAGES += \
     libdisplayqos \
     libdisplayskuutils \
     libdpps \
-    libgame_enhance \
-    libhdr_backlight_adapter \
     libhdr_tm \
+    libintervmipc \
     libmemutils \
-    libmm-hdcpmgr \
     libq3dtools_adreno \
     libq3dtools_esx \
     ftm_fm_lib \
@@ -903,12 +901,15 @@ PRODUCT_PACKAGES += \
     libqseed3 \
     libqtigatekeeper \
     librcmask \
+    libsdm-color \
     libsdm-colormgr-algo \
     libsdm-disp-vndapis \
     libsdmextension \
     libsnapdragoncolor-manager \
     libsnapdragoncolor-qdcm \
     libtestutils \
+    libtinyxml2_1 \
+    libvmfilexfer \
     libvmmem \
     mbedtls_qti \
     vendor.qti.hardware.bluetooth_sar@aidl-impl \
@@ -1020,7 +1021,6 @@ PRODUCT_PACKAGES += \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
-    libcolor-default \
     libcom.qti.chinodeutils \
     libconfigdb \
     libcpion \
@@ -1228,7 +1228,6 @@ PRODUCT_PACKAGES += \
     libscveObjectSegmentation \
     libscveObjectTracker \
     libscveObjectTracker_stub \
-    libsdm-color \
     libsdsprpc \
     libsensor_calibration \
     libsensorslog \
@@ -1266,7 +1265,6 @@ PRODUCT_PACKAGES += \
     libthermalclient \
     libthreadutils \
     libtime_genoff \
-    libtinyxml2_1 \
     libtrustedapploader \
     libtzdrmgenprov \
     libubifocus \
