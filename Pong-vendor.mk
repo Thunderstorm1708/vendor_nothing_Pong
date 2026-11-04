@@ -795,6 +795,7 @@ PRODUCT_PACKAGES += \
     com.qtistatic.stats.awb \
     com.qtistatic.stats.pdlib \
     init.qti.kernel \
+    libbacklight-calib \
     libdepthmapwrapper \
     libdepthmapwrapper_secure \
     com.nothing.node.aimoon \
@@ -876,7 +877,16 @@ PRODUCT_PACKAGES += \
     libGLESv1_CM_adreno \
     libGLESv2_adreno \
     libVkLayer_ADRENO_qprofiler \
+    libdigital-dimming \
+    libdisp-aba \
+    libdisplayqos \
+    libdisplayskuutils \
+    libdpps \
+    libgame_enhance \
+    libhdr_backlight_adapter \
+    libhdr_tm \
     libmemutils \
+    libmm-hdcpmgr \
     libq3dtools_adreno \
     libq3dtools_esx \
     ftm_fm_lib \
@@ -886,8 +896,19 @@ PRODUCT_PACKAGES += \
     camera.qcom \
     com.qti.chi.override \
     fingerprint.default \
+    libqdcm-algo \
+    libqdcm-json-mode-parser \
+    libqdcm-mode-parser \
     libqrtrclient \
+    libqseed3 \
     libqtigatekeeper \
+    librcmask \
+    libsdm-colormgr-algo \
+    libsdm-disp-vndapis \
+    libsdmextension \
+    libsnapdragoncolor-manager \
+    libsnapdragoncolor-qdcm \
+    libtestutils \
     libvmmem \
     mbedtls_qti \
     vendor.qti.hardware.bluetooth_sar@aidl-impl \
