@@ -1695,6 +1695,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     QtiTelephony \
     ims \
+    libSurfaceUtil_jni \
     libimsmedia_jni \
     qcrilhook \
     qcrilmsgtunnel
