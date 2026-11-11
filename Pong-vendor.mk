@@ -1700,3 +1700,24 @@ PRODUCT_PACKAGES += \
     libimsmedia_jni \
     qcrilhook \
     qcrilmsgtunnel
+
+# Codec2 video HAL - from PenguinOS (celerity 20261025)
+PRODUCT_COPY_FILES += \
+    vendor/nothing/Pong/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
+    vendor/nothing/Pong/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
+    vendor/nothing/Pong/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
+
+PRODUCT_PACKAGES += \
+    libqcodec2_base \
+    libqcodec2_basecodec \
+    libqcodec2_core \
+    libqcodec2_filterbase \
+    libqcodec2_hooks \
+    libqcodec2_imgtxrfilter \
+    libqcodec2_mockfilter \
+    libqcodec2_platform \
+    libqcodec2_utils \
+    libqcodec2_v4l2codec \
+    libvideotxr \
+    c2_manifest_vendor.xml \
+    vendor.qti.media.c2@1.0-service
