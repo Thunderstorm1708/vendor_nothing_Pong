@@ -1150,7 +1150,6 @@ PRODUCT_PACKAGES += \
     libntcamyuv \
     libntf \
     libntofflinepostproc \
-    liboemcrypto \
     libomp \
     libopencv \
     libopencv3a \
